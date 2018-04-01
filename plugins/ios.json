@@ -12,6 +12,9 @@
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "io.cordova.helloworld"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.cordova.helloworld"
     }
   },
   "dependent_plugins": {}

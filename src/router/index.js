@@ -6,6 +6,7 @@ Vue.use(Router)
 
 import Home from '../components/HomePage'
 import Geo from '../components/Geo'
+import Camera from '../components/Camera'
 const router = new Router({
     routes: [
         {
@@ -17,6 +18,11 @@ const router = new Router({
             path: 'geolocalisation',
             component: Geo,
             name: "Geolocalisation"
+        },
+        {
+            path: 'camera',
+            component: Camera,
+            name: 'Camera'
         }
     ]
 })

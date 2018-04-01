@@ -18,7 +18,8 @@
 
                 items: [
                     {name: 'Home'},
-                    {name: 'Geolocalisation'}
+                    {name: 'Geolocalisation'},
+                    {name: 'Camera'}
                 ]
             }
         },

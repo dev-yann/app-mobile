@@ -9,7 +9,8 @@
         </v-ons-toolbar>
         <v-ons-row>
             <v-ons-col>
-                <p>geo</p>
+                <h1>Géolocalisation</h1>
+                <p>Pour fonctionner ce service à besoin d'une connexion internet et des inforamtions de localisation activées sur votre téléphone</p>
             </v-ons-col>
         </v-ons-row>
     </v-ons-page>
