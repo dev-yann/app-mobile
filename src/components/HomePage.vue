@@ -9,8 +9,7 @@
         </v-ons-toolbar>
         <v-ons-row>
             <v-ons-col>
-                <p>Bienvenue sur mon application, vous pourrez trouvé un jeu snake intégré ainsi qu'une présentation et
-                    une fonctionalité qui </p>
+                <p>Bienvenue sur mon application, vous pourrez trouvé quelques fonctionalitées qui utilisent les services de cordova</p>
             </v-ons-col>
         </v-ons-row>
     </v-ons-page>
