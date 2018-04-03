@@ -9,8 +9,15 @@
 
             </v-ons-splitter-side>
 
-            <v-ons-splitter-content>
-                <router-view></router-view>
+            <v-ons-splitter-content class="content">
+                    <v-ons-toolbar class="home-toolbar mytool">
+                        <div class="left">
+                            <v-ons-toolbar-button @click="$store.commit('splitter/toggle')">
+                                <v-ons-icon icon="ion-navicon, material:md-menu" class="icone"></v-ons-icon>
+                            </v-ons-toolbar-button>
+                        </div>
+                    </v-ons-toolbar>
+                    <router-view class="myView"></router-view>
             </v-ons-splitter-content>
         </v-ons-splitter>
     </v-ons-page>
@@ -54,4 +61,12 @@
     .mytool {
         background-color: #FF530D;
     }
+
+    .icone {
+        color: white;
+    }
+    .myView{
+        margin-top: 44px;
+    }
+
 </style>

@@ -1,16 +1,14 @@
 <template>
     <v-ons-page>
-        <v-ons-toolbar class="home-toolbar mytool">
-            <div class="left">
-                <v-ons-toolbar-button @click="$store.commit('splitter/toggle')">
-                    <v-ons-icon icon="ion-navicon, material:md-menu" class="icone"></v-ons-icon>
-                </v-ons-toolbar-button>
-            </div>
-        </v-ons-toolbar>
-        <button id="cameraTakePicture">TAKE PICTURE</button>
-        <img id="myImage"/>
+        <v-ons-row>
+            <v-ons-col>
+                <section>
+                    <v-ons-button modifier="large" style="margin: 6px 0" id="cameraTakePicture">Prendre une photo</v-ons-button>
+                </section>
+                <img id="myImage"/>
+            </v-ons-col>
+        </v-ons-row>
     </v-ons-page>
-
 </template>
 
 <script>
@@ -44,14 +42,18 @@
             }
 
 
-        },
-        methods: {
-
         }
     }
 </script>
 
 <style scoped>
-    
+
+    #myImage{
+        width: 100vw;
+    }
+
+    section{
+        padding: 20px;
+    }
 
 </style>
