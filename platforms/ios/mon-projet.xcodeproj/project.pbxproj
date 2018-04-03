@@ -23,6 +23,7 @@
 		86F96A141DC34402B653B64D /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4C85CB1094994A6EBB490 /* CDVJpegHeaderWriter.m */; };
 		96DE6C6FD0D145F3880C519B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6A51320F45485095798DF9 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B278BE2EEB554405A5F1BAB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381056D1D2434616A4F58B29 /* AVFoundation.framework */; };
+		4F9341D0B501445C83713D85 /* Base64ToGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 72891B2CEF78493EB54B4C9A /* Base64ToGallery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		F4C0DB21CACC4B3A9BDE6A22 /* CDVExif.h */ = {isa = PBXFileReference; name = "CDVExif.h"; path = "cordova-plugin-camera/CDVExif.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		7F6A51320F45485095798DF9 /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		381056D1D2434616A4F58B29 /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		72891B2CEF78493EB54B4C9A /* Base64ToGallery.m */ = {isa = PBXFileReference; name = "Base64ToGallery.m"; path = "cordova-base64-to-gallery/Base64ToGallery.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		87AED52A88BC4F1E89DDF58F /* Base64ToGallery.h */ = {isa = PBXFileReference; name = "Base64ToGallery.h"; path = "cordova-base64-to-gallery/Base64ToGallery.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,8 @@
 				F269D35FA1B2412A9A3C6E04 /* CDVCamera.h */,
 				1F06C76C0610405DBE4726A5 /* CDVJpegHeaderWriter.h */,
 				F4C0DB21CACC4B3A9BDE6A22 /* CDVExif.h */,
+				72891B2CEF78493EB54B4C9A /* Base64ToGallery.m */,
+				87AED52A88BC4F1E89DDF58F /* Base64ToGallery.h */,
 			);
 			name = Plugins;
 			path = "mon-projet/Plugins";
@@ -309,6 +314,7 @@
 				20FA4BB0E36F4A49BB4BDAEC /* UIImage+CropScaleOrientation.m in Sources */,
 				DE720AC16EF7453EB6D18AE6 /* CDVCamera.m in Sources */,
 				86F96A141DC34402B653B64D /* CDVJpegHeaderWriter.m in Sources */,
+				4F9341D0B501445C83713D85 /* Base64ToGallery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

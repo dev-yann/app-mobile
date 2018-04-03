@@ -64,11 +64,11 @@
                     },
 
                     function(path) {
-                        console.log(path);
+                        alert(path);
                     },
 
                     function(err) {
-                        console.error(err);
+                        alert(err);
                     }
                 );
             }

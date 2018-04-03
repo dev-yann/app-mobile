@@ -15,6 +15,9 @@
     },
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "io.cordova.helloworld"
+    },
+    "cordova-base64-to-gallery": {
+      "PACKAGE_NAME": "io.cordova.helloworld"
     }
   },
   "dependent_plugins": {}

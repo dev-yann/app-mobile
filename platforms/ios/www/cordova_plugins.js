@@ -63,6 +63,19 @@ module.exports = [
     "clobbers": [
       "CameraPopoverHandle"
     ]
+  },
+  {
+    "id": "cordova-base64-to-gallery.object.assign-polyfill",
+    "file": "plugins/cordova-base64-to-gallery/www/object.assign-polyfill.js",
+    "pluginId": "cordova-base64-to-gallery"
+  },
+  {
+    "id": "cordova-base64-to-gallery.base64ToGallery",
+    "file": "plugins/cordova-base64-to-gallery/www/base64ToGallery.js",
+    "pluginId": "cordova-base64-to-gallery",
+    "clobbers": [
+      "cordova.base64ToGallery"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -70,7 +83,8 @@ module.exports.metadata =
 {
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-geolocation": "4.0.1",
-  "cordova-plugin-camera": "4.0.2"
+  "cordova-plugin-camera": "4.0.2",
+  "cordova-base64-to-gallery": "4.1.3"
 };
 // BOTTOM OF METADATA
 });
