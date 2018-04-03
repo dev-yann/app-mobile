@@ -11,7 +11,7 @@
         name: "Camera",
         mounted() {
 
-            document.addEventListener("deviceready", onDeviceReady, false);
+            /*document.addEventListener("deviceready", onDeviceReady, false);
 
             function onDeviceReady() {
 
@@ -34,7 +34,7 @@
 
                 })
 
-            }
+            }*/
 
 
         },
