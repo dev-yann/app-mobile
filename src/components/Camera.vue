@@ -26,6 +26,8 @@
         name: "Camera",
         mounted() {
 
+
+            let instanceVue = this;
             document.addEventListener("deviceready", onDeviceReady, false);
 
             function onDeviceReady() {
@@ -41,8 +43,8 @@
                     function onSuccess(imageData) {
                         let image = document.getElementById('myImage');
                         image.src = "data:image/jpeg;base64," + imageData;
-                        this.save = true
-                        this.image = imageData
+                        instanceVue.save = true
+                        instanceVue.image = imageData
                     }
 
                     function onFail(message) {
