@@ -5,6 +5,9 @@
                 <section>
                     <v-ons-button modifier="large" style="margin: 6px 0" id="cameraTakePicture">Prendre une photo</v-ons-button>
                 </section>
+                <section v-if="save">
+                    <v-ons-button modifier="large" style="margin: 6px 0" @click="saving">Enregistrer la photo</v-ons-button>
+                </section>
                 <img id="myImage"/>
             </v-ons-col>
         </v-ons-row>
@@ -13,6 +16,13 @@
 
 <script>
     export default {
+        data () {
+            return {
+
+                save: false,
+                image: ''
+            }
+        },
         name: "Camera",
         mounted() {
 
@@ -31,6 +41,8 @@
                     function onSuccess(imageData) {
                         let image = document.getElementById('myImage');
                         image.src = "data:image/jpeg;base64," + imageData;
+                        this.save = true
+                        this.image = imageData
                     }
 
                     function onFail(message) {
@@ -40,8 +52,26 @@
                 })
 
             }
+        },
+        methods:{
+            saving () {
+                cordova.base64ToGallery(
+                    this.image,
 
+                    {
+                        prefix: 'img_',
+                        mediaScanner: true
+                    },
 
+                    function(path) {
+                        console.log(path);
+                    },
+
+                    function(err) {
+                        console.error(err);
+                    }
+                );
+            }
         }
     }
 </script>
