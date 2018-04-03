@@ -8,7 +8,7 @@
             </div>
         </v-ons-toolbar>
         <v-ons-row>
-            <v-ons-col>
+            <v-ons-col class="geotext">
                 <h1>Géolocalisation</h1>
                 <p>Pour fonctionner ce service à besoin d'une connexion internet et des inforamtions de localisation activées sur votre téléphone</p>
             </v-ons-col>
@@ -56,5 +56,10 @@
 </script>
 
 <style scoped>
-
+    .mytool {
+        background-color: #FF530D;
+    }
+    .geotext{
+        padding: 20px;
+    }
 </style>

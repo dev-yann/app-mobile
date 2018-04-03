@@ -50,4 +50,8 @@
     ons-splitter-side[side=left][animation=overlay] {
         border-right: 1px solid #BBB;
     }
+
+    .mytool {
+        background-color: #FF530D;
+    }
 </style>

@@ -1,5 +1,12 @@
 <template>
     <v-ons-page>
+        <v-ons-toolbar class="home-toolbar mytool">
+            <div class="left">
+                <v-ons-toolbar-button @click="$store.commit('splitter/toggle')">
+                    <v-ons-icon icon="ion-navicon, material:md-menu" class="icone"></v-ons-icon>
+                </v-ons-toolbar-button>
+            </div>
+        </v-ons-toolbar>
         <button id="cameraTakePicture">TAKE PICTURE</button>
         <img id="myImage"/>
     </v-ons-page>
@@ -11,7 +18,7 @@
         name: "Camera",
         mounted() {
 
-            /*document.addEventListener("deviceready", onDeviceReady, false);
+            document.addEventListener("deviceready", onDeviceReady, false);
 
             function onDeviceReady() {
 
@@ -24,7 +31,7 @@
                     });
 
                     function onSuccess(imageData) {
-                        var image = document.getElementById('myImage');
+                        let image = document.getElementById('myImage');
                         image.src = "data:image/jpeg;base64," + imageData;
                     }
 
@@ -34,7 +41,7 @@
 
                 })
 
-            }*/
+            }
 
 
         },
@@ -46,5 +53,9 @@
 
 <style scoped>
 
+    #myImage{
+        width: 100vw;
+        height: 100vh;
+    }
 
 </style>
