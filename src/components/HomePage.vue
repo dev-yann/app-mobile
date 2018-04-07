@@ -2,7 +2,7 @@
     <v-ons-page>
         <v-ons-row>
             <v-ons-col>
-                <p>Bienvenue sur mon application, vous pourrez trouvé quelques fonctionalitées qui utilisent les services de cordova</p>
+                <p>Bienvenue sur mon application, vous pourrez trouver quelques fonctionalités qui utilisent les services de cordova</p>
             </v-ons-col>
         </v-ons-row>
     </v-ons-page>
